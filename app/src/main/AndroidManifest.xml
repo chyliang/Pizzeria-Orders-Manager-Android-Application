@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.projectfive">
+
+    <application
+            android:allowBackup="true"
+            android:icon="@drawable/deluxeimage"
+            android:label="@string/app_name"
+            android:roundIcon="@drawable/deluxeimage"
+            android:supportsRtl="true"
+            android:theme="@style/Theme.Adding2Integers">
+        <activity android:name="com.example.projectfive.StoredActivity"
+                  android:label="@string/stored_orders"
+                  android:parentActivityName=".MainActivity">
+
+        </activity>
+        <activity android:name="com.example.projectfive.CurrentActivity"
+                  android:label="@string/current_order"
+                  android:parentActivityName=".MainActivity">
+        </activity>
+        <activity android:name="com.example.projectfive.CusActivity"
+                  android:label="@string/Customization"
+                  android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+                android:name="com.example.projectfive.MainActivity"
+                android:exported="true"
+                android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
